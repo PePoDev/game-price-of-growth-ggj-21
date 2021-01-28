@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class DialogBox : MonoBehaviour
+namespace Dialog
 {
-    private void Start()
+    public class DialogBox : MonoBehaviour
     {
+        private void Start()
+        {
         
-    }
+        }
 
-    private void Update()
-    {
+        private void Update()
+        {
         
+        }
     }
 }

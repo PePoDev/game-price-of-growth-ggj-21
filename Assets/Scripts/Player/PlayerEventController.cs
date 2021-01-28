@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerEventController : MonoBehaviour
+namespace Player
 {
-	
-    void Start()
-    {
-        
-    }
+	public class PlayerEventController : MonoBehaviour
+	{
 
-    void Update()
-    {
-        
-    }
-    
+		private void Start()
+		{
+			
+		}
+
+		private void Update()
+		{
+
+		}
+
+	}
 }
