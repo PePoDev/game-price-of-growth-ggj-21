@@ -1,28 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CameraFollow : MonoBehaviour 
 {
+	public Transform followTarget;
 	public float moveSpeed;
 
-	private Transform _followTarget;
 	private Vector3 _targetPos;
-	private bool _isFollowTargetNull;
 
-	public CameraFollow(Transform target)
+	public void SetTarget(Transform target)
 	{
-		_followTarget = target;
+		followTarget = target;
 	}
 
-	private void Start()
+	private void Update ()
 	{
-		_followTarget = GameObject.FindGameObjectWithTag(Statics.TAG_PLAYER).GetComponent<Transform>();
-		_isFollowTargetNull = _followTarget == null;
-	}
-
-	private void LateUpdate ()
-	{
-		if (_isFollowTargetNull) return;
-		_targetPos = new Vector3(_followTarget.position.x, _followTarget.position.y, transform.position.z);
+		_targetPos = new Vector3(followTarget.position.x, followTarget.position.y, transform.position.z);
 		var velocity = (_targetPos - transform.position) * moveSpeed;
 		transform.position = Vector3.SmoothDamp (transform.position, _targetPos, ref velocity, 1.0f, Time.deltaTime);
 	}
