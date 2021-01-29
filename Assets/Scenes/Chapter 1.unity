@@ -870,28 +870,6 @@ MonoBehaviour:
   dialogController: {fileID: 850055730}
   dialogPosition: {fileID: 676061111}
   dialogBox: {fileID: 907908420114274111}
---- !u!1 &649290256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6588506946421910318, guid: 1154a6e483794024db6df8c062fb207b, type: 3}
-  m_PrefabInstance: {fileID: 6588506946517488466}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &649290257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649290256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc4b924d225a014db8c12e1b527fc0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SCShader: {fileID: 4800000, guid: c96fb4c110f23db46b80d0779f18aee1, type: 3}
-  LutTexture: {fileID: 0}
-  LutTexture2: {fileID: 0}
-  Blend: 1
-  Fade: 1
 --- !u!4 &676061111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2810667502453733228, guid: 59d46813e9f4c4c48a02dfafafe5d2e6, type: 3}
