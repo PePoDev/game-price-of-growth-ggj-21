@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c9872cf50dd923745977ba4398a8b612
+guid: c92093a69fd24c54daead47820259fc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8782466774204800261
-    second: testszie20
+      213: 5779262933467880909
+    second: chair10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,13 +94,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: testszie20
+      name: chair10
       rect:
         serializedVersion: 2
         x: 1
         y: 1
-        width: 64
-        height: 64
+        width: 209
+        height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,8 +108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50dd528eff691e970800000000000000
-      internalID: 8782466774204800261
+      spriteID: dcd5fe4a401143050800000000000000
+      internalID: 5779262933467880909
       vertices: []
       indices: 
       edges: []
