@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0804fa4f259b50a4ba3eea705f388d72
+guid: 8b4d7163c504a6b4086f994d38e02061
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2116842087173263908
-    second: test_cha10
+      213: -157896055728653066
+    second: pipe10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,13 +94,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: test_cha10
+      name: pipe10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 66
-        height: 53
+        x: 1
+        y: 1
+        width: 159
+        height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,8 +108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdde07456577f92e0800000000000000
-      internalID: -2116842087173263908
+      spriteID: 6fcbbd6bf5a0fcdf0800000000000000
+      internalID: -157896055728653066
       vertices: []
       indices: 
       edges: []

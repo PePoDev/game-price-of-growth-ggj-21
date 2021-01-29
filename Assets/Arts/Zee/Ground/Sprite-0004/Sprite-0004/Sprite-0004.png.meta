@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0804fa4f259b50a4ba3eea705f388d72
+guid: 517b0581242892b479811a1ba02a8a62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2116842087173263908
-    second: test_cha10
+      213: 5687374782849970939
+    second: Sprite-00040
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,29 +78,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: test_cha10
+      name: Sprite-00040
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 66
-        height: 53
+        x: 1
+        y: 1
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,8 +96,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdde07456577f92e0800000000000000
-      internalID: -2116842087173263908
+      spriteID: bf279446b3d9dee40800000000000000
+      internalID: 5687374782849970939
       vertices: []
       indices: 
       edges: []
