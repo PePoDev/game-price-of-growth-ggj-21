@@ -487,11 +487,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 3
   m_CellSwizzle: 0
-<<<<<<< Updated upstream
 --- !u!114 &8190062399153117843
-=======
---- !u!114 &7781057838371516930
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
