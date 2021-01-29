@@ -6,13 +6,13 @@ namespace Player
     {
         public float movementSpeed = 1f;
     
-        private PlayerRenderer _isoRenderer;
+        //private PlayerRenderer _isoRenderer;
         private Rigidbody2D _rigid;
 
         private void Awake()
         {
             _rigid = GetComponent<Rigidbody2D>();
-            _isoRenderer = GetComponentInChildren<PlayerRenderer>();
+            //_isoRenderer = GetComponentInChildren<PlayerRenderer>();
         }
 
         private void FixedUpdate()
@@ -20,13 +20,16 @@ namespace Player
             var currentPos = _rigid.position;
             var horizontalInput = Input.GetAxis(Statics.INPUT_HORIZONTAL);
             var verticalInput = Input.GetAxis(Statics.INPUT_VERTICAL);
-        
+
+            Lebug.Log("Horizontal Input", horizontalInput, "Player");
+            Lebug.Log("Vertical Input", verticalInput, "Player");
+            
             var inputVector = new Vector2(horizontalInput, verticalInput);
             inputVector = Vector2.ClampMagnitude(inputVector, 1);
             var movement = inputVector * movementSpeed;
             var newPos = currentPos + movement * Time.fixedDeltaTime;
         
-            _isoRenderer.SetDirection(movement);
+            //_isoRenderer.SetDirection(movement);
             _rigid.MovePosition(newPos);
         }
     }

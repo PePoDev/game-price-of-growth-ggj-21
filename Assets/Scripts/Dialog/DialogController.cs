@@ -1,19 +1,20 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Serialization;
+using Debug = System.Diagnostics.Debug;
 
 namespace Dialog
 {
     public class DialogController : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        public DialogBox dialogBoxPrefab;
 
-        // Update is called once per frame
-        void Update()
+        public DialogBox CreateDialogBox(string msg, Transform target, float timeout = Statics.DEFAULT_DIALOG_TIMEOUT)
         {
-        
+            var dialogBox = Instantiate(dialogBoxPrefab, dialogBoxPrefab.transform.position, dialogBoxPrefab.transform.rotation);
+            dialogBox.transform.SetParent(transform, false);
+            dialogBox.SetDialogBox(msg, target, timeout);
+
+            return dialogBox;
         }
     }
 }
