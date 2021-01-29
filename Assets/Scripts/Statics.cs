@@ -1,12 +1,11 @@
 ﻿public static class Statics
 {
-    public const string TAG_MAIN_CAMERA = "MainCamera";
     public const string TAG_PLAYER = "Player";
     public const string TAG_TRIGGER = "Trigger";
 
     public const string INPUT_HORIZONTAL = "Horizontal";
     public const string INPUT_VERTICAL = "Vertical";
-    public const string INPUT_ACTION = "Action";
+    public const string INPUT_SUBMIT = "Submit";
 
     public const float DEFAULT_DIALOG_TIMEOUT = 4.5f;
 

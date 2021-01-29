@@ -10,6 +10,7 @@ namespace Events
 
         public void Trigger()
         {
+            Debug.Log("Log from Event");
         }
 
         public string GetActionName() => actionName;

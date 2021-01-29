@@ -19,7 +19,7 @@ public class CameraFollow : MonoBehaviour
 		_isFollowTargetNull = _followTarget == null;
 	}
 
-	private void Update ()
+	private void LateUpdate ()
 	{
 		if (_isFollowTargetNull) return;
 		_targetPos = new Vector3(_followTarget.position.x, _followTarget.position.y, transform.position.z);
