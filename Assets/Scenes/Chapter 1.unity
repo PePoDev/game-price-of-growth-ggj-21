@@ -147,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogController: {fileID: 850055730}
   dialogPosition: {fileID: 676061111}
+  dialogBox: {fileID: 907908420114274111}
 --- !u!4 &676061111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2810667502453733228, guid: 59d46813e9f4c4c48a02dfafafe5d2e6, type: 3}
@@ -205,7 +206,7 @@ Transform:
   m_Children:
   - {fileID: 2122505814}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1706868568
 GameObject:
@@ -316,7 +317,7 @@ Transform:
   m_LocalScale: {x: 0.5522717, y: 0.55230856, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1706868572
 MonoBehaviour:
@@ -330,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea77e644f04e451995e11571f32447b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionName: Play !
+  actionName: P l a y ! !
   eventName: Test Event
   targetAnimator: {fileID: 0}
 --- !u!1 &2122505813
@@ -493,7 +494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 907908420228612332, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 907908420228612332, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
       propertyPath: m_AnchorMax.x
@@ -579,8 +580,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogBox Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 907908420228612337, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662194663604721456, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662194663604721463, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -172.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662194664003701767, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
+      propertyPath: m_text
+      value: Hello, World !
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237356983065410078, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
+--- !u!114 &907908420114274111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4237356983065410078, guid: ec32c2eff136f7849a72dca1156e6457, type: 3}
+  m_PrefabInstance: {fileID: 907908420114274110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976902cef42ed9f4c8e414310dd6e194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1312066687464344358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -594,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1312066687140031902, guid: 59d46813e9f4c4c48a02dfafafe5d2e6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1312066687140031902, guid: 59d46813e9f4c4c48a02dfafafe5d2e6, type: 3}
       propertyPath: m_LocalPosition.x
