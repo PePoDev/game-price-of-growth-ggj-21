@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9b4eb617227242144bf64b4dbcf15ee2
+guid: 597b678fe2aa3174da70e7aa68acaf76
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4501465424390072871
-    second: ch1_swing10
+      213: 3730600038751741325
+    second: Sprite-0002-10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,29 +78,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ch1_swing10
+      name: Sprite-0002-10
       rect:
         serializedVersion: 2
         x: 1
         y: 1
-        width: 131
-        height: 130
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,8 +96,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72a297524fa687e30800000000000000
-      internalID: 4501465424390072871
+      spriteID: d852bdc38f0c5c330800000000000000
+      internalID: 3730600038751741325
       vertices: []
       indices: 
       edges: []
