@@ -62,6 +62,9 @@ TextureImporter:
   - first:
       213: 7509565444100471496
     second: ch1_swing119
+  - first:
+      213: -4011466682994515050
+    second: ch1_swing120
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -566,6 +569,27 @@ TextureImporter:
       bones: []
       spriteID: 8ca3829ebf5573860800000000000000
       internalID: 7509565444100471496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_swing120
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 131
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6932cc33e486458c0800000000000000
+      internalID: -4011466682994515050
       vertices: []
       indices: 
       edges: []
