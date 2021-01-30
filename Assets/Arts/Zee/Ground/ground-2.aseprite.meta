@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: a878a293ddbb9944e98edac6b2f51033
+=======
+guid: 3c510d2fc54317c45916dcb783deb66e
+>>>>>>> Stashed changes
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -12,7 +16,11 @@ ScriptedImporter:
     importType: 0
     transparencyMode: 0
     transparentColor: {r: 1, g: 0, b: 1, a: 1}
+<<<<<<< Updated upstream
     pixelsPerUnit: 16
+=======
+    pixelsPerUnit: 64
+>>>>>>> Stashed changes
     spriteAlignment: 0
     spritePivot: {x: 0.5, y: 0.5}
     generateAnimations: 1
