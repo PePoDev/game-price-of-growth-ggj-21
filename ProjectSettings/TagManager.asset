@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trigger
-  - StoryController
   - ObjectiveController
   layers:
   - Default

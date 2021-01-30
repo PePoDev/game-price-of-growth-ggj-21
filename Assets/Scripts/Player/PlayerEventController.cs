@@ -18,9 +18,9 @@ namespace Player
         {
             if (!Input.GetButtonDown(Statics.INPUT_SUBMIT)) return;
 
-            _triggerObject.GetComponent<IEvent>().Trigger();
             Lebug.Log("Last Event Name", _triggerObject.GetComponent<IEvent>().GetEventName(), "Event");
             Lebug.Log("Last Event Time", Time.time, "Event");
+            _triggerObject.GetComponent<IEvent>().Trigger();
         }
 
         private void OnCollisionEnter2D(Collision2D other)

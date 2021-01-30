@@ -1,14 +1,15 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 namespace Objective
 {
 	public class O_1_1 : MonoBehaviour, IObjective
 	{
+		public TextMeshProUGUI textObjective;
+		
 		public int count = 0;
 		public int goal = 3;
 
-		public Transform mom;
-		
 		private CameraFollow _camera;
 		
 		private void Start()
@@ -18,9 +19,9 @@ namespace Objective
 
 		private void Update()
 		{
+			textObjective.text = $"- Make Fun ({count}/{goal})";
+			
 			if (!IsSolved()) return;
-
-			_camera.SetTarget(mom);
 		}
 
 		public void IncrementTask()

@@ -4,5 +4,7 @@
 	{
 	
 		public bool IsSolved();
+
+		public void IncrementTask();
 	}
 }

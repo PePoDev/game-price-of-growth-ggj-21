@@ -1,44 +1,32 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Player
 {
     public class PlayerRenderer : MonoBehaviour
     {
-    
-
         private Animator _animator;
-        private int _lastDirection;
+        private PlayerMovementController _playerMovementController;
+        private SpriteRenderer _spriteRenderer;
+        private int _lastDirection = 0;
+
+        private static readonly int MovingSpeed = Animator.StringToHash("MovingSpeed");
 
         private void Awake()
         {
             _animator = GetComponent<Animator>();
+            _playerMovementController = GetComponent<PlayerMovementController>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        public void SetDirection(Vector2 direction)
+        public void Update()
         {
-            string[] directionArray = null;
-            if (direction.magnitude < .01f) directionArray = Statics.StaticDirections;
-            else
-            {
-                directionArray = Statics.RunDirections;
-                _lastDirection = DirectionToIndex(direction, 8);
-            }
+            _animator.SetFloat(MovingSpeed, _playerMovementController.GetMovingSpeed());
 
-            _animator.Play(directionArray[_lastDirection]);
-        }
+            if (_playerMovementController.GetDirection() != _lastDirection)
+                _lastDirection = _playerMovementController.GetDirection();
 
-        private static int DirectionToIndex(Vector2 direction, int sliceCount){
-            var angle = Vector2.SignedAngle(Vector2.up, direction.normalized) + 360f / sliceCount / 2;
-        
-            return Mathf.FloorToInt((angle < 0? angle + 360 : angle) / 360f / sliceCount);
-        }
-
-        public static int[] AnimatorStringArrayToHashArray(string[] animationArray)
-        {
-            var hashArray = new int[animationArray.Length];
-            for (var i = 0; i < animationArray.Length; i++) hashArray[i] = Animator.StringToHash(animationArray[i]);
-        
-            return hashArray;
+            _spriteRenderer.flipX = _lastDirection == 1 ? true : false;
         }
     }
 }

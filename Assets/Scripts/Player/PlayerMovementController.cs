@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.Mathematics;
+using UnityEngine;
 
 namespace Player
 {
@@ -6,13 +7,16 @@ namespace Player
     {
         public float movementSpeed = 1f;
     
-        //private PlayerRenderer _isoRenderer;
         private Rigidbody2D _rigid;
-
+        private float _movingSpeed = 0f;
+        private int _lastDirection = 1;
+        
+        public float GetMovingSpeed() => _movingSpeed;
+        public int GetDirection() => _lastDirection;
+        
         private void Awake()
         {
             _rigid = GetComponent<Rigidbody2D>();
-            //_isoRenderer = GetComponentInChildren<PlayerRenderer>();
         }
 
         private void FixedUpdate()
@@ -28,8 +32,11 @@ namespace Player
             inputVector = Vector2.ClampMagnitude(inputVector, 1);
             var movement = inputVector * movementSpeed;
             var newPos = currentPos + movement * Time.fixedDeltaTime;
-        
-            //_isoRenderer.SetDirection(movement);
+
+            _movingSpeed =  math.abs(horizontalInput);
+            if (horizontalInput > 0) _lastDirection = 1;
+            if (horizontalInput < 0) _lastDirection = -1;
+            
             _rigid.MovePosition(newPos);
         }
     }
