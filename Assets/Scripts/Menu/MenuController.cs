@@ -31,7 +31,6 @@ namespace SpeedTutorMainMenuSystem
         [SerializeField] private GameObject soundMenu;
         [SerializeField] private GameObject gameplayMenu;
         [SerializeField] private GameObject controlsMenu;
-        [SerializeField] private GameObject confirmationMenu;
         [Space(10)]
         [Header("Menu Popout Dialogs")]
         [SerializeField] private GameObject noSaveDialog;
@@ -61,14 +60,6 @@ namespace SpeedTutorMainMenuSystem
             menuNumber = 1;
         }
         #endregion
-
-        //MAIN SECTION
-        public IEnumerator ConfirmationBox()
-        {
-            confirmationMenu.SetActive(true);
-            yield return new WaitForSeconds(2);
-            confirmationMenu.SetActive(false);
-        }
 
         private void Update()
         {
@@ -169,7 +160,6 @@ namespace SpeedTutorMainMenuSystem
         {
             PlayerPrefs.SetFloat("masterVolume", AudioListener.volume);
             Debug.Log(PlayerPrefs.GetFloat("masterVolume"));
-            StartCoroutine(ConfirmationBox());
         }
 
         public void BrightnessSlider(float brightness)
@@ -182,7 +172,6 @@ namespace SpeedTutorMainMenuSystem
         {
             PlayerPrefs.SetFloat("masterBrightness", brightnessEffect.brightness);
             Debug.Log(PlayerPrefs.GetFloat("masterBrightness"));
-            StartCoroutine(ConfirmationBox());
         }
 
         public void ControllerSen()
@@ -207,8 +196,6 @@ namespace SpeedTutorMainMenuSystem
 
             PlayerPrefs.SetFloat("masterSen", controlSenFloat);
             Debug.Log("Sensitivity" + " " + PlayerPrefs.GetFloat("masterSen"));
-
-            StartCoroutine(ConfirmationBox());
         }
 
         #region ResetButton
