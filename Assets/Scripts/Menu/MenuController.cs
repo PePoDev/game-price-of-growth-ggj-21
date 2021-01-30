@@ -7,55 +7,63 @@ namespace Menu
     public class MenuController : MonoBehaviour
     {
         #region Default Values
-        [Header("Default Menu Values")]
-        [SerializeField] private float defaultBrightness;
+
+        [Header("Default Menu Values")] [SerializeField]
+        private float defaultBrightness;
+
         [SerializeField] private float defaultVolume;
         [SerializeField] private int defaultSen;
         [SerializeField] private bool defaultInvertY;
 
-        [Header("Levels To Load")]
-        public string _newGameButtonLevel;
+        [Header("Levels To Load")] public string _newGameButtonLevel;
         private string levelToLoad;
 
         private int menuNumber;
+
         #endregion
 
         #region Menu Dialogs
-        [Header("Main Menu Components")]
-        [SerializeField] private GameObject menuDefaultCanvas;
+
+        [Header("Main Menu Components")] [SerializeField]
+        private GameObject menuDefaultCanvas;
+
         [SerializeField] private GameObject GeneralSettingsCanvas;
         [SerializeField] private GameObject graphicsMenu;
         [SerializeField] private GameObject soundMenu;
         [SerializeField] private GameObject gameplayMenu;
         [SerializeField] private GameObject controlsMenu;
-        [Space(10)]
-        [Header("Menu Popout Dialogs")]
-        [SerializeField] private GameObject noSaveDialog;
+
+        [Space(10)] [Header("Menu Popout Dialogs")] [SerializeField]
+        private GameObject noSaveDialog;
+
         [SerializeField] private GameObject newGameDialog;
         [SerializeField] private GameObject loadGameDialog;
+
         #endregion
 
         #region Slider Linking
-        [Header("Menu Sliders")]
-        [SerializeField] private Text controllerSenText;
+
+        [Header("Menu Sliders")] [SerializeField]
+        private Text controllerSenText;
+
         [SerializeField] private Slider controllerSenSlider;
         public float controlSenFloat = 2f;
-        [Space(10)]
-        [SerializeField] private Brightness brightnessEffect;
+        [Space(10)] [SerializeField] private Brightness brightnessEffect;
         [SerializeField] private Slider brightnessSlider;
         [SerializeField] private Text brightnessText;
-        [Space(10)]
-        [SerializeField] private Text volumeText;
+        [Space(10)] [SerializeField] private Text volumeText;
         [SerializeField] private Slider volumeSlider;
-        [Space(10)]
-        [SerializeField] private Toggle invertYToggle;
+        [Space(10)] [SerializeField] private Toggle invertYToggle;
+
         #endregion
 
         #region Initialisation - Button Selection & Menu Order
+
         private void Start()
         {
             menuNumber = 1;
         }
+
         #endregion
 
         private void Update()
@@ -88,6 +96,7 @@ namespace Menu
         }
 
         #region Menu Mouse Clicks
+
         public void MouseClick(string buttonType)
         {
             if (buttonType == "Controls")
@@ -145,6 +154,7 @@ namespace Menu
                 menuNumber = 7;
             }
         }
+
         #endregion
 
         public void VolumeSlider(float volume)
@@ -196,6 +206,7 @@ namespace Menu
         }
 
         #region ResetButton
+
         public void ResetButton(string GraphicsMenu)
         {
             if (GraphicsMenu == "Brightness")
@@ -225,17 +236,18 @@ namespace Menu
                 GameplayApply();
             }
         }
+
         #endregion
 
         #region Dialog Options - This is where we load what has been saved in player prefs!
+
         public void ClickNewGameDialog(string ButtonType)
         {
             if (ButtonType == "Yes")
             {
-                SceneManager.LoadScene(_newGameButtonLevel);
+                Initiate.Fade(_newGameButtonLevel, Color.black, 1f);
             }
-
-            if (ButtonType == "No")
+            else if (ButtonType == "No")
             {
                 GoBackToMainMenu();
             }
@@ -250,7 +262,7 @@ namespace Menu
                     Debug.Log("I WANT TO LOAD THE SAVED GAME");
                     //LOAD LAST SAVED SCENE
                     levelToLoad = PlayerPrefs.GetString("SavedLevel");
-                    SceneManager.LoadScene(levelToLoad);
+                    Initiate.Fade(levelToLoad, Color.black, 1.0f);
                 }
 
                 else
@@ -267,9 +279,11 @@ namespace Menu
                 GoBackToMainMenu();
             }
         }
+
         #endregion
 
         #region Back to Menus
+
         public void GoBackToOptionsMenu()
         {
             GeneralSettingsCanvas.SetActive(true);
@@ -313,6 +327,7 @@ namespace Menu
         {
             GoBackToMainMenu();
         }
+
         #endregion
     }
 }
