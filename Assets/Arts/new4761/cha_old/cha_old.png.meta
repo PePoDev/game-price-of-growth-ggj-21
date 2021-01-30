@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f639caa85f66914b9dee3b64f632527
+guid: 39186da057771994b88ed93a6e55a456
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7080742956768198475
-    second: ch1_sandCha0
+      213: -4034716612788485067
+    second: cha_old0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,23 +78,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ch1_sandCha0
+      name: cha_old0
       rect:
         serializedVersion: 2
         x: 1
@@ -108,8 +96,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b08bf3dbc52cbd90800000000000000
-      internalID: -7080742956768198475
+      spriteID: 53400651e9ec108c0800000000000000
+      internalID: -4034716612788485067
       vertices: []
       indices: 
       edges: []
