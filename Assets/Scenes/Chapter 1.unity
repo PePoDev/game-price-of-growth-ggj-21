@@ -718,8 +718,16 @@ MonoBehaviour:
   sortAlpha: 1
   showRangeSoundGizmos: 1
   showSelectedRangeSoundGizmos: 1
-  rangeGizmoColor: {r: 0, g: 1, b: 0, a: 1}
-  selectedRangeGizmoColor: {r: 0, g: 1, b: 1, a: 1}
+  rangeGizmoColor:
+    r: 0
+    g: 1
+    b: 0
+    a: 1
+  selectedRangeGizmoColor:
+    r: 0
+    g: 1
+    b: 1
+    a: 1
   showAdvancedSettings: 0
   showLocalization: 1
   showVideoPlayerSettings: 0
@@ -773,7 +781,6 @@ MonoBehaviour:
   occlusionRayCastOffset: 0
   occlusionUseLayerMask: 0
   occlusionLayerMask:
-    serializedVersion: 2
     m_Bits: 0
   occlusionShowRaycasts: 1
   occlusionShowCategories: 0
@@ -826,6 +833,13 @@ MonoBehaviour:
     ProspectiveName: '[Uncategorized]'
   frames: 0
   showUnityMixerGroupAssignment: 1
+  _isStoppingMultiple: 0
+  _repriTime: -1
+  _groupsToRemove: []
+  _mustRescanGroups: 0
+  _trans: {fileID: 0}
+  _soundsLoaded: 0
+  _warming: 0
 --- !u!4 &78997258
 Transform:
   m_ObjectHideFlags: 0
