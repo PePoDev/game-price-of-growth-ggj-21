@@ -8,7 +8,6 @@ namespace Player
 {
     public class PlayerEventController : MonoBehaviour
     {
-        public DialogController dialogController;
         public Transform dialogPosition;
         public DialogBox dialogBox;
 
@@ -16,7 +15,7 @@ namespace Player
 
         private void Update()
         {
-            if (!Input.GetButtonDown(Statics.INPUT_SUBMIT)) return;
+	        if (!Input.GetButtonDown(Statics.INPUT_SUBMIT) || _triggerObject == null) return;
 
             Lebug.Log("Last Event Name", _triggerObject.GetComponent<IEvent>().GetEventName(), "Event");
             Lebug.Log("Last Event Time", Time.time, "Event");
