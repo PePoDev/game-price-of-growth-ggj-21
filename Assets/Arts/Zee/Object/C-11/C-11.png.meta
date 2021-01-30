@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 99b995ad8b716614a8b271073a6c4c77
+guid: 3bbe9de23161fa44ab5c50df13063a7f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7008660786868122061
-    second: Sprite-0009-80
+      213: -8171283424621168146
+    second: C-110
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,14 +49,14 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  textureShape: 2
+  textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
@@ -64,7 +64,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -82,7 +82,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0009-80
+      name: C-110
       rect:
         serializedVersion: 2
         x: 1
@@ -96,8 +96,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc1fb782ad3c34160800000000000000
-      internalID: 7008660786868122061
+      spriteID: ee9fa64c405c99e80800000000000000
+      internalID: -8171283424621168146
       vertices: []
       indices: 
       edges: []
@@ -105,7 +105,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

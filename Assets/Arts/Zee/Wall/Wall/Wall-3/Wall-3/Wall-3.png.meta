@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 99b995ad8b716614a8b271073a6c4c77
+guid: dc6ab95a719feaa43ae5778c06ecfd32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7008660786868122061
-    second: Sprite-0009-80
+      213: -1832256866327377300
+    second: Wall-30
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,7 +56,7 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  textureShape: 2
+  textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
@@ -64,7 +64,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -82,13 +82,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0009-80
+      name: Wall-30
       rect:
         serializedVersion: 2
         x: 1
         y: 1
-        width: 64
-        height: 64
+        width: 107
+        height: 141
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -96,8 +96,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc1fb782ad3c34160800000000000000
-      internalID: 7008660786868122061
+      spriteID: c6a494976148296e0800000000000000
+      internalID: -1832256866327377300
       vertices: []
       indices: 
       edges: []
@@ -105,7 +105,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
