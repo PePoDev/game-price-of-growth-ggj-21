@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 83c9474926a323d4cb15726be78536f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4180992180453856026
+    second: ch1_s2_faucets_100
+  - first:
+      213: 7548665757472166322
+    second: ch1_s2_faucets_101
+  - first:
+      213: 5324864041795747217
+    second: ch1_s2_faucets_102
+  - first:
+      213: 2876414920898906190
+    second: ch1_s2_faucets_103
+  - first:
+      213: 8648556893758852047
+    second: ch1_s2_faucets_104
+  - first:
+      213: 5158455330634373044
+    second: ch1_s2_faucets_105
+  - first:
+      213: 9207953079867824677
+    second: ch1_s2_faucets_106
+  - first:
+      213: -4605486463062607062
+    second: ch1_s2_faucets_107
+  - first:
+      213: -4104164212095543131
+    second: ch1_s2_faucets_108
+  - first:
+      213: -4803614344676710860
+    second: ch1_s2_faucets_109
+  - first:
+      213: -5097270126840414697
+    second: ch1_s2_faucets_110
+  - first:
+      213: -2490875068528686355
+    second: ch1_s2_faucets_111
+  - first:
+      213: -9208683586218170859
+    second: ch1_s2_faucets_112
+  - first:
+      213: 7239850563068574573
+    second: ch1_s2_faucets_113
+  - first:
+      213: 6709200218478099376
+    second: ch1_s2_faucets_114
+  - first:
+      213: -3227672379300295640
+    second: ch1_s2_faucets_115
+  - first:
+      213: 8410753861065498743
+    second: ch1_s2_faucets_116
+  - first:
+      213: 320171631028347182
+    second: ch1_s2_faucets_117
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ch1_s2_faucets_100
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 295
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecac5383c12af5c0800000000000000
+      internalID: -4180992180453856026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_101
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 295
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1984a038f32c860800000000000000
+      internalID: 7548665757472166322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_102
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 295
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d7c7832a7b5e940800000000000000
+      internalID: 5324864041795747217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_103
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 295
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4800d271241be720800000000000000
+      internalID: 2876414920898906190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_104
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 295
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb80404ca8d50870800000000000000
+      internalID: 8648556893758852047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_105
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 295
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b79e24eac3869740800000000000000
+      internalID: 5158455330634373044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_106
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 197
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a5cf15a8839cf70800000000000000
+      internalID: 9207953079867824677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_107
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 197
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b784776760610c0800000000000000
+      internalID: -4605486463062607062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_108
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 197
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a89c26d4641b07c0800000000000000
+      internalID: -4104164212095543131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_109
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 197
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436e2934432265db0800000000000000
+      internalID: -4803614344676710860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_110
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 197
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e777d73dbd249b0800000000000000
+      internalID: -5097270126840414697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_111
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 197
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea88788252ae6dd0800000000000000
+      internalID: -2490875068528686355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_112
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 99
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516ee7a611f243080800000000000000
+      internalID: -9208683586218170859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_113
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 99
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b3d9e8abd197460800000000000000
+      internalID: 7239850563068574573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_114
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 99
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb3c554d0edb1d50800000000000000
+      internalID: 6709200218478099376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_115
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 99
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c477c62110533d0800000000000000
+      internalID: -3227672379300295640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_116
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 99
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770ed06131009b470800000000000000
+      internalID: 8410753861065498743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ch1_s2_faucets_117
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 99
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e212a9ee66a717400800000000000000
+      internalID: 320171631028347182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
