@@ -19,7 +19,7 @@ public class StartStory : MonoBehaviour
 
     public void LoadNextScene()
     {
-        Initiate.Fade("Chapter 1", Color.black, 1f);
+        Initiate.Fade("Chapter 1-1", Color.black, 1f);
     }
 
     public void ChangeText(string text)
