@@ -4,48 +4,66 @@ using Dialog;
 using Player;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Objective
 {
-	public class O_1_2 : MonoBehaviour, IObjective
-	{
-		public GameObject goHomeMessage;
-		public TextMeshProUGUI textObjective;
-		
-		public int count = 0;
-		public int goal = 3;
+    public class O_1_2 : MonoBehaviour, IObjective
+    {
+        public TextMeshProUGUI textObjective;
+        public DialogController dialogController;
+        public Transform momDialogPosition;
+        private GameObject _playerObject;
 
-		private bool isGoHome = false;
-		private CameraFollow _camera;
-		
-		private void Start()
-		{
-			_camera = Camera.main.GetComponent<CameraFollow>();
-		}
+        private void Start()
+        {
+            _playerObject = GameObject.FindGameObjectWithTag(Statics.TAG_PLAYER);
+        }
 
-		private void Update()
-		{
-			textObjective.text = $"- Make Fun";
-			
-			if (!IsSolved() && isGoHome == false) return;
-			isGoHome = true;
-			StartCoroutine(goHome());
-		}
+        public void ShowMomMessage()
+        {
+            var d = dialogController.CreateDialogBox("Help Me, I Will Cook", momDialogPosition, 5f);
+            d.Show();
+            textObjective.text = "1. Fill water in bottle\n2. Put bottle to Refrigerator\n3. Waiting on sofa";
+        }
 
-		private IEnumerator goHome()
-		{
-			yield return new WaitForSeconds(6f);
-			GameObject.FindGameObjectWithTag(Statics.TAG_PLAYER).GetComponent<PlayerMovementController>().enabled = false;
-			goHomeMessage.SetActive(true);
-			yield return new WaitForSeconds(5f);
-			Initiate.Fade("Chapter 1-2", Color.black, 1f);
-		}
+        public void HideHiddenMessage(GameObject target)
+        {
+            StartCoroutine(hide());
+            IEnumerator hide()
+            {
+                yield return new WaitForSeconds(3f);
+                target.SetActive(false);
+            }
+        }
+        
+        public void ShowPlayer(Animator animator)
+        {
+            StartCoroutine(Show());
+            IEnumerator Show()
+            {
+                yield return new WaitForSeconds(0.5f);
+                while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+                    yield return null;
+                _playerObject.SetActive(true);
+                _playerObject.GetComponent<PlayerMovementController>().enabled = true;
+            }
+        }
 
-		public void IncrementTask()
-		{
-			count++;
-		}
+        public void LoadNextScene()
+        {
+            StartCoroutine(Task());
+            IEnumerator Task()
+            {
+                yield return new WaitForSeconds(3f);
+                Initiate.Fade("Chapter 1-3", Color.black, 1f);
+            }
+        }
 
-		public bool IsSolved() => count >= goal;
-	}
+        public void IncrementTask()
+        {
+        }
+
+        public bool IsSolved() => false;
+    }
 }

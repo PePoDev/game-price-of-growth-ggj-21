@@ -1,4 +1,6 @@
-﻿using Unity.Mathematics;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Player
@@ -19,6 +21,16 @@ namespace Player
             _rigid = GetComponent<Rigidbody2D>();
         }
 
+        public void EnablePlayerMovementAfter(float time)
+        {
+            StartCoroutine(Show());
+            IEnumerator Show()
+            {
+                yield return new WaitForSeconds(time);
+                enabled = true;
+            }
+        }
+        
         private void FixedUpdate()
         {
             var currentPos = _rigid.position;

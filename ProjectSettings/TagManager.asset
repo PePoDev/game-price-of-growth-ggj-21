@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Trigger
   - ObjectiveController
+  - AudioManager
   layers:
   - Default
   - TransparentFX

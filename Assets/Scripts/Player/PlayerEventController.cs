@@ -13,13 +13,20 @@ namespace Player
 
         private Collider2D _triggerObject;
 
+        public void ClearTargetCollider()
+        {
+            _triggerObject = null;
+        }
+        
         private void Update()
         {
 	        if (!Input.GetButtonDown(Statics.INPUT_SUBMIT) || _triggerObject == null) return;
 
             Lebug.Log("Last Event Name", _triggerObject.GetComponent<IEvent>().GetEventName(), "Event");
             Lebug.Log("Last Event Time", Time.time, "Event");
+            
             _triggerObject.GetComponent<IEvent>().Trigger();
+            _triggerObject = null;
         }
 
         private void OnCollisionEnter2D(Collision2D other)

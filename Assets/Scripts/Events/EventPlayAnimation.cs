@@ -22,9 +22,11 @@ namespace Events
         private static readonly int AnimatorTriggerName = Animator.StringToHash("Trigger");
         private bool _alreadyIncrement = false;
         private SpriteRenderer _spriteRenderer;
+        private AudioManager _audioManager;
 
         private void Start()
         {
+            _audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _targetAnimator = GetComponent<Animator>();
             _player = GameObject.FindGameObjectWithTag(Statics.TAG_PLAYER);
@@ -33,6 +35,7 @@ namespace Events
 
         public void Trigger()
         {
+            _audioManager.PlaySound("Open");
             _targetAnimator.SetTrigger(AnimatorTriggerName);
             _player.SetActive(false);
 
@@ -55,7 +58,6 @@ namespace Events
         private IEnumerator OnCompleteAnimation()
         {
             yield return new WaitForSeconds(0.5f);
-
             while (!_targetAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
                 yield return null;
 
