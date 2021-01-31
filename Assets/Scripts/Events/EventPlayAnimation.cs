@@ -2,6 +2,7 @@
 using System.Collections;
 using Objective;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 
 namespace Events
@@ -12,14 +13,19 @@ namespace Events
         public string eventName;
         public bool disableOnCompleted = false;
 
+        public Material defaultMaterial;
+        public Material shinyMaterial;
+        
         private Animator _targetAnimator;
         private GameObject _player;
         private IObjective _objective;
         private static readonly int AnimatorTriggerName = Animator.StringToHash("Trigger");
         private bool _alreadyIncrement = false;
+        private SpriteRenderer _spriteRenderer;
 
         private void Start()
         {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
             _targetAnimator = GetComponent<Animator>();
             _player = GameObject.FindGameObjectWithTag(Statics.TAG_PLAYER);
             _objective = GameObject.FindGameObjectWithTag(Statics.TAG_OBJECTIVE).GetComponent<IObjective>();
@@ -40,6 +46,8 @@ namespace Events
                 _alreadyIncrement = true;
                 _objective.IncrementTask();
             }
+            
+            _spriteRenderer.material = defaultMaterial;
 
             StartCoroutine(OnCompleteAnimation());
         }
@@ -52,6 +60,7 @@ namespace Events
                 yield return null;
 
             _player.SetActive(true);
+            _spriteRenderer.material = shinyMaterial;
         }
 
         public string GetActionName() => actionName;
