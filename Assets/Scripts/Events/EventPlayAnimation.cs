@@ -10,10 +10,12 @@ namespace Events
     {
         public string actionName;
         public string eventName;
+        public bool disableOnCompleted = false;
+
         private Animator _targetAnimator;
         private GameObject _player;
         private IObjective _objective;
-        private static readonly int Trigger1 = Animator.StringToHash("Trigger");
+        private static readonly int AnimatorTriggerName = Animator.StringToHash("Trigger");
         private bool _alreadyIncrement = false;
 
         private void Start()
@@ -25,8 +27,13 @@ namespace Events
 
         public void Trigger()
         {
-            _targetAnimator.SetTrigger(Trigger1);
+            _targetAnimator.SetTrigger(AnimatorTriggerName);
             _player.SetActive(false);
+
+            if (disableOnCompleted)
+            {
+                gameObject.tag = "Untagged";
+            }
 
             if (_alreadyIncrement == false)
             {
