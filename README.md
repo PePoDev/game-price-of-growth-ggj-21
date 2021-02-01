@@ -6,8 +6,8 @@ Story game about growing story and lost something every grow. Finally, He will f
 
 ## Screenshots
 
-![Chapter 1 - 1 - Playground](screenshots/Screenshot-chapter-1-1-playground.png)
-![Chapter 1 - 2 - Home](screenshots/Screenshot-chapter-1-2-home.png)
+![Chapter 1 - 1 - Playground](Screenshots/screenshot-chapter-1-1-playground.png)
+![Chapter 1 - 2 - Home](Screenshots/screenshot-chapter-1-2-home.png)
 
 ## Installation
 
