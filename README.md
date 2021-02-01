@@ -11,7 +11,7 @@ Story game about growing story and lost something every grow. Finally, He will f
 
 ## Installation
 
-- [Online play](https://pepodev.itch.io/price-of-growth)
+- [Online Play](https://pepodev.itch.io/price-of-growth)
 - [Offine Download](https://github.com/PePoDev/game-price-of-growth-ggj-21/releases)
 
 ## Contributers (Jammer in this project)
