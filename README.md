@@ -2,7 +2,7 @@
 
 > This project status is work in progress (Maybe)
 
-Story game about growing story and lost something every grow. Finally, He will find answer of life or not ?
+Story game about growing story and lost something every grow. Finally, He will found the answer of life or not ?
 
 ## Screenshots
 
