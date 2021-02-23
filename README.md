@@ -1,6 +1,6 @@
 # Price of Growth
 
-> This project status is work in progress (Maybe)
+> This project status is discontiued 😪
 
 Story game about growing story and lost something every grow. Finally, He will found the answer of life or not ?
 
